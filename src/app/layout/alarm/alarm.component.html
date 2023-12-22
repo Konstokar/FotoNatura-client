@@ -1,0 +1,26 @@
+<div>
+  <h2>What happened?</h2>
+  <form [formGroup]="profileEditForm">
+    <mat-radio-group>
+      <mat-radio-button value="1">Sexual content</mat-radio-button>
+      <br>
+      <mat-radio-button value="2">Excessive cruelty</mat-radio-button>
+      <br>
+      <mat-radio-button value="3">Insult or manifestation of intolerance</mat-radio-button>
+      <br>
+      <mat-radio-button value="4">Spam or fake information</mat-radio-button>
+      <br>
+      <mat-radio-button value="5">Copyright</mat-radio-button>
+      <br>
+    </mat-radio-group>
+    <div class="row">
+      <button (click)="closeDialog()" class="w-50"
+              mat-button mat-dialog-close disableRipple>
+        Cancel
+      </button>
+      <button color="primary" class="w-50" (click)="submit()" mat-button disableRipple>
+        Send
+      </button>
+    </div>
+  </form>
+</div>
